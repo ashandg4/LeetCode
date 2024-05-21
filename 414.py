@@ -1,3 +1,5 @@
+# Third Maximum Number
+
 nums = [2, 2, 3, 1]
 nums2 = []
 [nums2.append(value) for value in nums if value not in nums2]
