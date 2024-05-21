@@ -1,5 +1,7 @@
-array1=[5,7,7,8,8,10]
-target=8
+# Find First and Last Position of Element in a Sorted Array
+
+array1 = [5, 7, 7, 8, 8, 10]
+target = 8
 
 # print("Original array: ",array1)
 
@@ -11,28 +13,24 @@ target=8
 
 
 # Method-1
-l=[]
+l = []
 if target in array1:
-    i=0
+    i = 0
     for j in array1:
-        if j==target:
+        if j == target:
             l.append(i)
-        i+=1  
-    if len(l)==1:
+        i += 1
+    if len(l) == 1:
         l.append(l[0])
 elif target not in array1:
-    l.extend([-1,-1])
-print([l[0],l[-1]])
-
-
-
+    l.extend([-1, -1])
+print([l[0], l[-1]])
 
 
 # Method-2
-length=len(array1)-1
+length = len(array1)-1
 if target in array1:
-    array2=array1[::-1]
-    print([array1.index(target),length-array2.index(target)])
+    array2 = array1[::-1]
+    print([array1.index(target), length-array2.index(target)])
 else:
-    print([-1,-1])
-    
+    print([-1, -1])
