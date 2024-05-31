@@ -5,16 +5,28 @@ list2 = []
 
 # Method-1
 
-for i in nums:
-    if i not in list1:
-        list1.append(i)
-    else:
-        list2.append(i)
-result = [x for x in list1 if x not in list2]
-print(result)
-
 
 # Method-2
+s = set()
+for i in nums:
+    if i in s:
+        s.remove(i)
+    else:
+        s.add(i)
+print(list(s))
+
+
+# Method-3
+
+# for i in nums:
+#     if i not in list1:
+#         list1.append(i)
+#     else:
+#         list1.remove(i)
+# print(list2)
+
+
+# Method-4
 
 # for i in nums:
 #     if nums.count(i)==1:
