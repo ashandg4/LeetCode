@@ -4,9 +4,6 @@ list1 = []
 list2 = []
 
 # Method-1
-
-
-# Method-2
 s = set()
 for i in nums:
     if i in s:
@@ -16,7 +13,7 @@ for i in nums:
 print(list(s))
 
 
-# Method-3
+# Method-2
 
 # for i in nums:
 #     if i not in list1:
@@ -26,7 +23,7 @@ print(list(s))
 # print(list2)
 
 
-# Method-4
+# Method-3
 
 # for i in nums:
 #     if nums.count(i)==1:
