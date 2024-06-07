@@ -13,5 +13,4 @@ for word in range(len(sent)):
         if txt in dict1:
             sent[word] = txt
             break
-
 print(" ".join(sent))
