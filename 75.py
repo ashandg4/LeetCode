@@ -18,8 +18,8 @@ nums = [2, 0, 2, 1, 1, 0]
 # print(f(lst, sorted_nums, 2))
 
 
-l = 0  # The next 0 should be placed in l.
-r = len(nums) - 1  # THe next 2 should be placed in r.
+l = 0
+r = len(nums) - 1
 
 i = 0
 while i <= r:
@@ -30,8 +30,6 @@ while i <= r:
     elif nums[i] == 1:
         i += 1
     else:
-        # We may swap a 0 to index i, but we're still not sure whether this 0
-        # is placed in the correct index, so we can't move pointer i.
         nums[i], nums[r] = nums[r], nums[i]
         r -= 1
 print(nums)
